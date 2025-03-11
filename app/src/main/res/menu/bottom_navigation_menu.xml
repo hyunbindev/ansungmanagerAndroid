@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeMenuBtn"
+        android:title="메인"/>
+    <item android:id="@+id/customerMenuBtn"
+        android:title="고객"/>
+    <item android:id="@+id/productMenuBtn"
+        android:title="상품"/>
+    <item android:id="@+id/deliveryMenuBtn"
+        android:title="배달"/>
+</menu>

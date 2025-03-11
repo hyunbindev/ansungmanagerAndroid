@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "325366587677",
+    "project_id": "ansungmanager-a4ed3",
+    "storage_bucket": "ansungmanager-a4ed3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325366587677:android:d6cf892facb0001860c1f4",
+        "android_client_info": {
+          "package_name": "com.example.ansungmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-fqCZdkHfEA2wwbWCsLvE6ml_ggPXxaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진천쌀"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/product_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10kg"/>
+        <TextView
+            android:id="@+id/product_qauntity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X10"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/product_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="120000원"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"/>
+</LinearLayout>

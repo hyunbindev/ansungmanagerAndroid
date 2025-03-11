@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.customer.FragmentAddCustomer">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="고객 전화번호"
+                />
+            <EditText
+                android:id="@+id/customer_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="전화번호를 입력해 주세요"
+                android:inputType="phone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="고객 주소"/>
+            <EditText
+                android:id="@+id/customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="주소를 입력해 주세요."/>
+            <com.naver.maps.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="추가사항"/>
+            <EditText
+                android:id="@+id/customer_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="추가사항을 입력해 주세요."/>
+            <Button
+                android:id="@+id/add_customer_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="고객 추가하기"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

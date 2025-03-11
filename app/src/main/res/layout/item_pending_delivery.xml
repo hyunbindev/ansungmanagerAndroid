@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="2dp"
+    android:background="@drawable/rounded_item_background">
+    <TextView
+        android:id="@+id/delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배달 주소"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/delivery_customer_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="고객전화번호"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/delivery_create_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배달시각"
+        android:textStyle="italic"/>
+</LinearLayout>
