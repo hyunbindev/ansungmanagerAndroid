@@ -41,4 +41,7 @@ interface RetrofitService {
 
     @DELETE("/api/category")
     fun deleteCategory(@Query("categoryId")categoryId: Long):Call<Void>
+
+    @GET("/api/auth")
+    fun getAuth(@Query("name")name:String , @Query("password")password:String):Call<Void>
 }

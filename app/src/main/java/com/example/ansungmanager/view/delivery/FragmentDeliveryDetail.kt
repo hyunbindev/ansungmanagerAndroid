@@ -131,5 +131,4 @@ class FragmentDeliveryDetail : BottomSheetDialogFragment() , OnMapReadyCallback 
         naverMap.uiSettings.isZoomControlEnabled=false;
         loadDeliveryData(naverMap);
     }
-
 }

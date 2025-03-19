@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,23 +16,30 @@
         android:theme="@style/Theme.AnsungManager"
         tools:targetApi="31">
         <activity
-            android:name=".view.delivery.ActivityDelivery"
-            android:exported="false"
-            android:label="@string/title_activity_delivery"
-            android:theme="@style/Theme.AnsungManager.NoActionBar" />
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="true">
+            android:name=".view.auth.AuthActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AnsungManager.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.delivery.ActivityDelivery"
+            android:exported="false"
+            android:label="@string/title_activity_delivery"
+            android:theme="@style/Theme.AnsungManager.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
         <service
             android:name=".service.FirebaseCloudMessageService"
-            android:exported="true"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
